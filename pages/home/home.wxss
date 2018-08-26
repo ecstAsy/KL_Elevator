@@ -1,0 +1,10 @@
+@import '../../template/tab/tab.wxss';
+@import '../../template/search/search.wxss';
+@import "../../template/about/about.wxss";
+@import "../../template/news/list.wxss";
+@import '../../template/solution/solution.wxss';
+@import '../../template/classic/classic.wxss';
+page{
+  padding-top: 90rpx;
+  background: #fafafa;
+}

@@ -1,0 +1,47 @@
+<import src="../../template/loading/loading.wxml" />
+<template is="Loading" data="{{Loading,Class}}" />
+
+<view class='quotation' style='height:{{SystemInfo.Height}}px'>
+  <view class='Logo_show'>
+    <view class='Logo_line' 
+          style='bottom:{{SystemInfo.Width*0.7*0.1}}px'></view>
+    <view class='Logo' 
+          style='width:{{SystemInfo.Width*0.7*0.3}}px;height:{{SystemInfo.Width*0.7*0.3}}px'>
+      <image src='/image/logo.jpg' />
+    </view>
+  </view>
+  <form bindsubmit='formSubmit'>
+    <view class="weui-flex formItem">
+      <view class="placeholder formItem_icon">
+        <image src='/image/quotation/account.png' />
+      </view>
+      <view class="weui-flex__item formItem_input">
+        <view class="placeholder">
+          <input placeholder='手机号/用户名' name="account"
+                 placeholder-class='formItem_placeholder' />
+        </view>
+      </view>
+      <view>
+      </view>
+    </view>
+    <view class="weui-flex formItem">
+      <view class="placeholder formItem_icon">
+        <image src='/image/quotation/password.png' />
+      </view>
+      <view class="weui-flex__item formItem_input">
+        <view class="placeholder">
+          <input placeholder='密码' name="password" 
+                 placeholder-class='formItem_placeholder' />
+        </view>
+      </view>
+      <view>
+      </view>
+    </view>
+
+    <button class='quotation_form_btn' formType="submit">登陆</button>
+    <view class="weui-flex__item forgrtPassword">
+      <navigator url="" class="weui-agree__link">忘记密码？</navigator>
+    </view>
+  </form>
+
+</view>

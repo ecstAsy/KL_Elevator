@@ -1,0 +1,33 @@
+<import src="../../template/formItem/formItem.wxml" />
+<import src="../../template/loading/loading.wxml" />
+<import src="../../template/select/select.wxml" />
+<form bindsubmit="formSubmit">
+  <view class='customized'>
+    <image src='https://www.cketrip.com/Canny/personal/8.jpg'
+           mode="aspectFill" class='bg'
+           style='height:{{SystemInfo.Width*0.5}}px' />
+    <view class='customized_info' 
+          style='margin-top:{{-SystemInfo.Width*0.3}}px'>
+      <view class='customized_info_title'>
+        <text class='customized_info_title_span'></text>
+        <text class='customized_info_title_txt'>定制信息</text>
+        <text class='customized_info_title_span'></text>
+      </view>
+      <block wx:for="{{Form}}" wx:for-item="list" wx:key="index">
+        <template is="FormItem" data="{{list,ElevatorTypes,ElevatorTypeIndex}}"/>
+      </block>
+      <view class='remark'>
+        <view class='customized_info_remark'> 备注 </view>
+        <view class='customized_info_remark_input'>
+          <textarea class='customized_info_remark_textarea'
+                    placeholder-class='textareaClass'
+                    name='remark'/>
+        </view>
+      </view>
+    </view>
+       <button class='customized_form_btn' formType="submit">提交申请</button>
+  </view>
+</form>
+
+ <template is="Loading" data="{{Loading,Class}}"/>
+ <template is="Select" data="{{pickerViewShow,ElevatorTypes,SystemInfo,AnimationData}}"/>

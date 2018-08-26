@@ -1,0 +1,27 @@
+<template name="FormItem">
+  <view class='FormItem'>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">{{list.name}}</view>
+      </view>
+      <view wx:if="{{list.name==='电梯类别'}}" class="weui-cell__bd">
+        <view style='text-align: right' bindtap='bindElevatorTypeChange'>
+        <text wx:if="{{!ElevatorTypeIndex}}" 
+              class='weui-input' style='color: #bdc7d2'>选择</text><image
+               wx:if="{{!ElevatorTypeIndex}}" class='FormItem_icon'
+                src='/image/personal/right.png'/>
+        <text wx:else 
+              class='weui-input'>{{ElevatorTypes[ElevatorTypeIndex]}}</text>
+        </view>
+      </view>
+      <view wx:else class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入"
+               placeholder-class='customized_input'
+               type="{{list.name==='姓名'?'text':'number'}}"
+               maxlength="{{list.name==='联系方式'?'11':'-1'}}"
+               name="{{list.info}}" />
+      </view>
+      
+    </view>
+  </view>
+</template>

@@ -1,0 +1,9 @@
+<template name="Solution">
+   <view class='solution_list'>
+     <image src='{{solution.img}}' mode="widthFix"/>
+     <view class='solution_list_txt'>
+       <text class='solution_list_txt_name'>{{solution.name}}</text>
+       <text class='solution_list_txt_intro'>{{solution.intro}}</text>
+     </view>
+   </view>
+</template>

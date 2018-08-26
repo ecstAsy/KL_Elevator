@@ -1,0 +1,7 @@
+<view class='Logo_show'>
+  <image style='width:50%' mode="widthFix"
+         src='/image/logo.jpg'/>
+  <image style='width:100%' mode="widthFix"
+         src='/image/intro.png'/>
+</view>
+<text class="copyright">© {{year}} 苏州畅客网络团队 倾情出品</text>

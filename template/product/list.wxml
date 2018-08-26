@@ -1,0 +1,15 @@
+<template name="ProductList">
+  <view class='ProductList' bindtap='handleViewProductDetail' data-id='{{list.id}}'>
+    <view class='ProductList_Image'>
+      <image src='{{list.img}}'mode="widthFix" lazy-load='true'/>
+      <view class='VR_box'>
+        <image class='VR' src='/image/VR.png'/>
+        <text class='VR_txt'>VR体验</text>
+      </view>
+    </view>
+    <view class='ProductList_Intro weui-flex'>
+      <text class='ProductList_type weui-flex__item'>{{list.name}}</text>
+      <text class='ProductList_price weui-flex__item'>价格：面议</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,9 @@
+<template name="Tab">
+  <view class='weui-flex Tab'>
+    <block wx:for="{{Tab}}" wx:for-item="tab" wx:key="index">
+      <view class='weui-flex__item Tab_list {{ActiveId===index?"active":""}}' bindtap='handleTab' data-id='{{index}}'>
+        {{tab}}
+      </view>
+    </block>
+  </view>
+</template>

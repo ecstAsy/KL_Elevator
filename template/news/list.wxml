@@ -1,0 +1,11 @@
+<template name="NewsList">
+  <view class='NewsList' data-id="{{list.id}}" bindtap='handleViewNewsDetail'>
+    <view class='NewsList_Intro'>
+      <text class='NewsList_Intro_Title'> {{list.title}} </text>
+      <text class='NewsList_Intro_Time'>发布时间： {{list.time}} </text>
+    </view>
+    <view class='NewsList_Image'>
+      <image src='{{list.img1}}' mode="aspectFill"/>
+    </view>
+  </view>
+</template>

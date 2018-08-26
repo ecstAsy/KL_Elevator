@@ -1,0 +1,8 @@
+@import '../../template/product/list.wxss';
+@import '../../template/tab/tab.wxss';
+@import '../../template/loading/loading.wxss';
+page{
+  padding-top: 90rpx;
+}
+
+

@@ -1,0 +1,111 @@
+@import '../../template/loading/loading.wxss';
+
+page {
+  padding-top: 150rpx;
+}
+
+.quotation {
+  width: 100%;
+  position: fixed;
+  background: #fff;
+}
+
+.Logo_show {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Logo_line {
+  width: 100%;
+  height: 2rpx;
+  background: #3365ad;
+  position: absolute;
+  z-index: -1;
+}
+
+.Logo {
+  border: 1rpx solid #3365ad;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.Logo image {
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder {
+  text-align: left;
+  line-height: 3em;
+  color: #cfcfcf;
+}
+
+.formItem {
+  width: 70%;
+  margin: 0 auto;
+  border: 1rpx solid #3365ad;
+  border-radius: 10rpx;
+  margin-top: 100rpx;
+  height: 3em;
+  min-height: 3em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.formItem_icon {
+  width: 3em;
+  background: #fff;
+  vertical-align: middle;
+}
+
+.formItem_icon image {
+  display: block;
+  height: 60%;
+  width: 60%;
+  margin: 20%;
+}
+
+input {
+  height: 3em;
+  padding-left: 30rpx;
+  min-height: 3em;
+  line-height: 3em;
+  font-size: 32rpx;
+  text-indent: 20rpx;
+  color: #fff;
+}
+
+.formItem_placeholder {
+  color: #f1f1f1;
+}
+
+.formItem_input {
+  background: #3365ad;
+  vertical-align: middle;
+}
+
+.formItem:nth-of-type(2) {
+  margin-top: 30rpx;
+}
+
+.forgrtPassword {
+  width: 70%;
+  text-align: right;
+  font-size: 28rpx;
+  margin: 30rpx auto;
+}
+
+.quotation_form_btn {
+  width: 70%;
+  height: 3em;
+  margin-top: 60rpx;
+  line-height: 3em;
+  font-size: 34rpx;
+  color: #fff;
+  background: #3365ad;
+  border-radius: 10rpx;
+  border: none;
+  outline: medium;
+}

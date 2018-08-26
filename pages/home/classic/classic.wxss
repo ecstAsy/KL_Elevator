@@ -1,0 +1,36 @@
+.Classic_Image{
+  width: 100%;
+}
+
+.Classic_Image image{
+  width: 100%;
+}
+
+.Classic_Content{
+  margin: 20rpx 4%;
+}
+.Classic_Content_Title{
+  font-size: 32rpx;
+  color: #ff9900;
+  display: block;
+}
+.Classic_Content_Name{
+  display: block;
+  font-size: 34rpx;
+  color: #000;
+  font-weight: 700;
+  text-indent: 70rpx;
+  margin-top: 20rpx;
+}
+
+.Classic_Content_detail{
+  display: block;
+  font-size: 30rpx;
+  color: #333;
+  text-indent: 70rpx;
+  margin-top: 20rpx;
+}
+
+    .detail_list{
+      margin-bottom: 30rpx;
+    }

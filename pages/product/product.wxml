@@ -1,0 +1,25 @@
+<import src="../../template/product/list.wxml" />
+<import src="../../template/loading/loading.wxml" />
+<import src="../../template/tab/tab.wxml" />
+<template is="Tab" data="{{Tab,ActiveId}}"/>
+<template is="Loading" data="{{Loading,Class}}"/>
+<swiper current="{{ActiveId}}" style="height:{{SystemInfo.Height}}px;"
+        bindchange="switchTab">
+  <swiper-item wx:for="{{[0,1,2,3,4,5]}}" wx:key="index">
+    <scroll-view scroll-y style="height:{{SystemInfo.Height}}px"
+                 lower-threshold="90" scroll-with-animation>
+      <view class="content" wx:if="{{!Loading}}">
+      <block wx:for='{{Product}}' wx:for-item='list' wx:key='i'>
+         <template is="ProductList" data="{{list}}"/>
+      </block>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+<!-- <scroll-view style="height: {{ SystemInfo.Height }}px; width: {{ SystemInfo.Width }}px;" scroll-y scroll-with-animation bindscrolltolower="loadMore">
+  <view class="content">
+    <block wx:for='{{Product}}' wx:for-item='list' wx:key='i'>
+      <template is="ProductList" data="{{list,SystemInfo}}"/>
+    </block>
+  </view>
+</scroll-view> -->

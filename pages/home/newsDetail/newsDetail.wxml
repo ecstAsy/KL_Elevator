@@ -1,0 +1,19 @@
+<view class='News_content'>
+  <view class='News_content_title'>
+    {{newsDetail.title}}
+  </view>
+  <view class='News_content_time'>
+    发布时间：{{newsDetail.time}}
+  </view>
+  <view class='News_content_detail'>
+    <text class='News_content_detail_txt'>{{newsDetail.detaila}}</text>
+    <view class='News_content_detail_img'>
+      <image src='{{newsDetail.img1}}' mode="widthFix"/>
+    </view>
+    <text class='News_content_detail_txt'>{{newsDetail.detailb}}</text>
+    <view class='News_content_detail_img'>
+      <image src='{{newsDetail.img2}}' mode="widthFix"/>
+    </view>
+    <text class='News_content_detail_txt'>{{newsDetail.detailc}}</text>
+  </view>
+</view>

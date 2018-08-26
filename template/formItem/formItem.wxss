@@ -1,0 +1,20 @@
+.FormItem{
+  border-bottom: 1px solid #e5e8ec;
+  margin-top: 10rpx;
+}
+
+.customized_input{
+  font-size: 32rpx;
+  color: #bdc7d2;
+  text-align: right;
+}
+
+.FormItem_icon{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.FormItem_toast{
+  color: #bdc7d2;
+}

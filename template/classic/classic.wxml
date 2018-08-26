@@ -1,0 +1,11 @@
+<template name="Classic">
+  <view class='Classic_list' data-id="{{list.id}}" bindtap='viewClassic'>
+    <view class='Classic_list_image'>
+      <image src='{{list.img}}' mode='widthFix'/>
+    </view>
+    <view class='Classic_list_intro'>
+       <view class='Classic_list_intro_name'>{{list.name}}</view>
+       <view class='Classic_list_intro_intro'>{{list.light}}</view>
+    </view>
+  </view>
+</template> 

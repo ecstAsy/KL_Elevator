@@ -1,0 +1,12 @@
+<view class='Classic_Image'>
+  <image src="{{classicStr.img}}" mode='widthFix' />
+</view>
+<view class='Classic_Content'>
+  <block wx:for="{{Detail}}" wx:for-item="classic" wx:key='index'>
+    <view wx:if='{{classic.detail}}' class='detail_list'>
+      <text class='Classic_Content_Title'>{{classic.title}}：</text>
+      <text class='Classic_Content_Name' wx:if="{{classic.title==='工程名称'}}">{{classic.detail}}</text>
+      <text class='Classic_Content_detail' wx:else>{{classic.detail}}</text>
+    </view>
+  </block>
+</view>

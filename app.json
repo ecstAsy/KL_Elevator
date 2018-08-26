@@ -1,0 +1,38 @@
+{
+  "pages":[
+    
+    "pages/show/show",
+    "pages/home/home",
+    "pages/home/newsDetail/newsDetail",
+    "pages/home/classic/classic",
+    "pages/product/product",
+    "pages/product/productShow/productShow",
+    "pages/personalTailor/personalTailor",
+    "pages/quotation/quotation"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3365ad",
+    "navigationBarTitleText": "康力电梯",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#cfcfcf",
+    "selectedColor": "#fff",
+    "borderStyle": "#fff",
+    "backgroundColor": "#3365ad",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "公司首页"
+    },{
+      "pagePath": "pages/product/product",
+      "text": "产品中心"
+    },{
+      "pagePath": "pages/personalTailor/personalTailor",
+      "text": "私人定制"
+    },{
+      "pagePath": "pages/quotation/quotation",
+      "text": "在线报价"
+    }]
+  }
+}

@@ -1,0 +1,110 @@
+@import '../../template/formItem/formItem.wxss';
+@import '../../template/loading/loading.wxss';
+@import '../../template/select/select.wxss';
+page {
+  background: #f5f5f5;
+}
+
+.customized {
+  width: 100%;
+}
+
+.customized .bg {
+  width: 100%;
+  display: block;
+}
+
+.customized_info {
+  width: 74%;
+  padding: 25rpx 3%;
+  background: rgba(255, 255, 255, 1);
+  margin-left: 10%;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 14rpx 16rpx rgba(185, 184, 184, 0.35);
+}
+ 
+.customized_info_title {
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #444;
+}
+
+.customized_info_title_txt {
+  display: inline-block;
+  margin: 0 20rpx;
+}
+
+.customized_info_title_span {
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  background: #444;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.customized .weui-cell {
+  padding: 0 10rpx;
+}
+
+.customized .weui-label {
+  font-size: 32rpx;
+  color: #939ba4;
+}
+
+.customized .weui-input {
+  font-size: 32rpx;
+  color: #333;
+  text-align: right;
+}
+
+.customized_info_remark{
+  display: inline-block;
+  width: 20%;
+  margin-left: 2%;
+  margin-right: 8%;
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  color: #939ba4;
+  vertical-align: top;
+}
+
+.customized_info_remark_input{
+  width: 70%;
+  margin-top: 15rpx;
+  display: inline-block;
+}
+
+.customized_info_remark_textarea{
+  width: 94%;
+  padding: 5rpx 3%;
+  height: 140rpx;
+  min-height: 140rpx;
+  border: 1rpx solid #e5e8ec;
+}
+
+.textareaClass{
+  color: #bdc7d2;
+  font-size: 32rpx;
+}
+
+.customized_form_btn{
+ margin-top: 80rpx;
+ display: block;
+ width: 50%;
+ height: 80rpx;
+ padding: 0;
+ font-size: 34rpx;
+ line-height: 80rpx;
+ color: #fff;
+ background: #3365ad;
+ border-radius: 40rpx;
+ border: none;
+ outline: medium;
+}
+.customized_form_btn::after{
+  border-radius: 40rpx;
+ border: none;
+ outline: medium;
+}

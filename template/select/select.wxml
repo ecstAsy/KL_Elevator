@@ -1,0 +1,12 @@
+<template name="Select">
+  <view wx:if='{{pickerViewShow}}' animation="{{AnimationData}}" class='Select' catchtouchmove='move'>
+    <picker-view class='Select_picker'  indicator-class="pickerIndictor" mask-class="pickerMask" style="width: 100%;height:{{SystemInfo.Height*0.4}}px" value="{{value}}" bindchange="bindChange">
+      <text class='pickerCancel' bindtap='bindCancel'>取消</text>
+      <text class='pickerConfim' bindtap='bindConfim'>确定</text>
+      <picker-view-column>
+        <view class='Select_item' wx:for="{{ElevatorTypes}}" wx:key='index'
+              data-id="{{index}}">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</template>
