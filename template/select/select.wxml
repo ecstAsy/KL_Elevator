@@ -4,7 +4,7 @@
       <text class='pickerCancel' bindtap='bindCancel'>取消</text>
       <text class='pickerConfim' bindtap='bindConfim'>确定</text>
       <picker-view-column>
-        <view class='Select_item' wx:for="{{ElevatorTypes}}" wx:key='index'
+        <view class='Select_item {{ElevatorTypeIndex===index?"active":""}}' wx:for="{{ElevatorTypes}}" wx:key='index'
               data-id="{{index}}">{{item}}</view>
       </picker-view-column>
     </picker-view>

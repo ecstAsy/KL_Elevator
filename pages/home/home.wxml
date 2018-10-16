@@ -5,28 +5,23 @@
 <import src="../../template/solution/solution.wxml" />
 <import src="../../template/classic/classic.wxml" />
 
-<template is="Tab" data="{{Tab,ActiveId}}"/>
-<template is="Search" data="{{searchValue,CityArray,CityIndex}}" wx:if="{{ActiveId === 3 ? true : false }}"/>
+<template is="Tab" data="{{Tab,ActiveId}}" />
+<template is="Search" data="{{searchValue,CityArray,CityIndex}}" wx:if="{{ActiveId === 3 ? true : false }}" />
 
-<swiper current="{{ActiveId}}" style="height:{{SystemInfo.Height}}px"
-        bindchange="switchTab">
+<swiper current="{{ActiveId}}" style="height:{{SystemInfo.Height}}px" bindchange="switchTab">
   <swiper-item wx:for="{{[0,1,2,3]}}" wx:key="index">
-    <scroll-view scroll-y style="height:{{SystemInfo.Height}}px"
-                 lower-threshold="100">
+    <scroll-view scroll-y style="height:{{SystemInfo.Height}}px" lower-threshold="100">
       <view class="content" style='pad'>
-        <template wx:if="{{ActiveId === 0 ? true : false }}"
-                  is="AboutCompany" data="{{data}}"/>
-        <block wx:if="{{ActiveId === 1 ? true : false }}" 
-               wx:for="{{News}}" wx:key='i' wx:for-item='list'>
-          <template is="NewsList" data="{{list}}"/>
+        <template wx:if="{{ActiveId === 0 ? true : false }}" is="AboutCompany" data="{{companyAbout}}" />
+        <block wx:if="{{ActiveId === 1 ? true : false }}" wx:for="{{companyNews}}" wx:key='i' wx:for-item='list'>
+          <template is="NewsList" data="{{list}}" />
         </block>
-        <block wx:if="{{ActiveId === 2 ? true : false }}"
-               wx:for="{{Solution}}" wx:key='i' wx:for-item='solution'>
-          <template is="Solution" data="{{solution}}"/>
+        <block wx:if="{{ActiveId === 2 ? true : false }}" wx:for="{{Solution}}" wx:key='i' wx:for-item='solution'>
+          <template is="Solution" data="{{solution}}" />
         </block>
         <view style='padding-top:100rpx;' wx:if="{{ActiveId === 3 ? true : false }}">
           <block wx:for="{{Classic}}" wx:key='i' wx:for-item='list'>
-            <template is="Classic" data="{{SystemInfo,list}}"/>
+            <template is="Classic" data="{{SystemInfo,list}}" />
           </block>
         </view>
       </view>

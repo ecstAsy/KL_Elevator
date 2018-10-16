@@ -29,7 +29,7 @@ Page({
     ElevatorTypes:[
       '商户住宅', '商户客梯', '别墅梯', '货梯', '观光梯', '扶梯'
     ],
-    ElevatorTypeIndex: '',
+    ElevatorTypeIndex: 0,
     pickerViewShow:false,
     AnimationData :''
   },
@@ -80,6 +80,7 @@ Page({
     that.Picker(that,'open')
   },
   bindChange(e){
+    console.log(e)
     this.setData({
       ElevatorTypeIndex: e.detail.value[0]
     })

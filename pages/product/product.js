@@ -38,6 +38,7 @@ Page({
       SystemInfo: App.globalData.SystemInfo
     })
     that.showLoading(that, ProductData);
+    
   },
   showLoading(that, ProductData){
     that.setData({

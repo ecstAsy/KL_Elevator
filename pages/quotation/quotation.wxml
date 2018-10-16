@@ -17,7 +17,7 @@
       </view>
       <view class="weui-flex__item formItem_input">
         <view class="placeholder">
-          <input placeholder='手机号/用户名' name="account"
+          <input placeholder='手机号/用户名' name="username"
                  placeholder-class='formItem_placeholder' />
         </view>
       </view>

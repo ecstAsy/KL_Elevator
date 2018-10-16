@@ -58,4 +58,9 @@
   margin: 0 auto;
   color: #555;
   font-size: 32rpx;
+  
+}
+
+.Select_item.active{
+  color: #3365ad;
 }

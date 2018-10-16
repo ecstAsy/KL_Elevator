@@ -30,4 +30,4 @@
 </form>
 
  <template is="Loading" data="{{Loading,Class}}"/>
- <template is="Select" data="{{pickerViewShow,ElevatorTypes,SystemInfo,AnimationData}}"/>
+ <template is="Select" data="{{pickerViewShow,ElevatorTypes,SystemInfo,AnimationData,ElevatorTypeIndex}}"/>
